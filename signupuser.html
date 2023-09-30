@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '300px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '600px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '800px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex justify-center items-center my-[10%]  bg-[#232020]">
+    <div class="flex justify-center items-center gap-[30px] flex-wrap">
+        <div class=" sm:basis-[50%] md:basis-[50%]  rounded-md">
+            <img src="Rectangle 253.png" alt="" class="h-full w-full  bg-cover object-cover bg-no-repeat">
+        </div>
+        <div class=" h-full w-full flex justify-center items-center basis-[40%] ">
+            <form action="">
+                <label for="">Enter your name:</label><br>
+                <input class="border-2 p-[10px] my-[10px] rounded-md" type="text" placeholder="Eg:M aman kumar"><br>
+                <label for="">Create Username:</label><br>
+                <input class="border-2 p-[10px] my-[10px] rounded-md" type="text" placeholder="Eg: aman3224"><br>
+                <label for="">Enter club unique id:</label><br>
+                <input class="border-2 p-[10px] my-[10px] rounded-md" type="text" placeholder="Eg:abtdfr23"><br>
+                <button class="py-[20px] px-[30px] rounded-sd bg-[royalblue] w-full p-[10px] my-[10px] rounded-md">CONTINUE</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
